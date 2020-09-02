@@ -1,0 +1,9 @@
+<h1>data:</h1>
+<ul>
+  <li *ngFor="let item of data$ | async">
+    {{item.name}}&nbsp;
+    {{item.sum}}&nbsp;
+    {{item.date | date:'longTime'}}
+  </li>
+</ul>
+

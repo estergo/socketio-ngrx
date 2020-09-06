@@ -9,7 +9,8 @@ import {DataEffects} from 'core/store/data.effects';
 import { AppComponent } from 'app.component';
 import { ListComponent } from 'list/list.component';
 import { ChartComponent } from 'chart/chart.component';
-import { SummaryComponent } from './summary/summary.component';
+import { SummaryComponent } from 'summary/summary.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SummaryComponent } from './summary/summary.component';
     BrowserModule,
     StoreModule.forRoot(fromNotesStore.reducers),
     EffectsModule.forRoot([DataEffects]),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

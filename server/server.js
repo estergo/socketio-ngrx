@@ -9,7 +9,7 @@ const myCache = new NodeCache();
 
 app.get('/login', (req, res) => {
     const uuid = uuidv4();
-    myCache.set(req.body.username, uuid );
+    myCache.set(req.query.username, uuid );
     res.send({token: uuid});
 
 });

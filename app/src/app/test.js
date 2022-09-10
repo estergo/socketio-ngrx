@@ -14,7 +14,7 @@ line.substring(spacing).replace('\r', '')).join('\n');
         return '';
     }
 };
-const ENV AWS_SECRET_ACCESS_KEY="AKIAIOSFODNN7EXAMPLE";
+const ENV AWS_SECRET_ACCESS_KEY="AKIAIOSFODNN7EXAMPLEA";
 ​
 const extractBaseFilePathFromResource = (source, checksMetadataPath, 
 s3FileKey) => {
